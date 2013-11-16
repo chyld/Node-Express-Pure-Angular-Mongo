@@ -1,0 +1,4 @@
+mixin field(type, name, text, value, placeholder, autofocus)
+  if text
+    label(for=name) #{text}:
+  input(value=value, type=type, name=name, placeholder=placeholder, autofocus=autofocus)

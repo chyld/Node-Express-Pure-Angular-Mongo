@@ -1,0 +1,7 @@
+extends ../template/layout
+
+block content
+  .pure-g-r
+    .pure-u-1
+      #home(ng-controller='HomeController as home')
+        h1 {{home.greeting}}
