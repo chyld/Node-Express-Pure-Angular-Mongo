@@ -1,20 +1,11 @@
-/* global document, window, io, angular */
+/* global document, window, io */
 
-var socket, app;
+var socket;
 
 $(document).ready(initialize);
-setupAngular();
 
 function initialize(){
   initializeSocketIO();
-}
-
-function setupAngular(){
-  app = angular.module('App', []);
-
-  app.controller('HomeController', function(){
-    this.greeting = 'Welcome to Angular!';
-  });
 }
 
 function initializeSocketIO(){
